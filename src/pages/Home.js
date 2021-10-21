@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import ItemListContainer from '../components/ItemListContainer';
+
 // import Layout from '../components/Layout';
 
 const Home = () => {
@@ -9,9 +10,7 @@ const Home = () => {
         <>
             {/* Con esto llamo a Navbar. Se le coloca / xq no tiene hijos */}
             <Navbar />
-            <ItemListContainer />
-            {/* <Welcome title="Hola clase por props"/> */}
-            {/* <Welcome title="Otro título"/> */}
+            <ItemListContainer title="Listado de productos" />
             {/* <Main />*/}
             {/* <Footer />*/}
             {/* <Layout> */}
