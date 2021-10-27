@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from './CartWidget/CartWidget'
 
 const Navbar = () => {
     return(
@@ -6,7 +7,7 @@ const Navbar = () => {
             <nav className="navbar">
                 <div className="navbarTop">
                     <div><input placeholder="Buscar"/></div>
-                    <div><a href="#"><img src="../../../img/logo.jpg" alt="logo" className="logo"/></a></div>
+                    <div><CartWidget name= {''}/></div>
                     <div><img src="../../../img/carrito.png" alt="carrito" className="logoCarrito"/></div>
                 </div>
                 <div>
@@ -25,26 +26,3 @@ const Navbar = () => {
     );
 };
 export default Navbar;
-
-
-
-
-
-
-
-
-
-// Otra forma de exportar
-// Si uso esta forma de exportar, tengo que usar llaves en mi archivo donde importe Navbar
-// export const Navbar = () => {
-//     return(
-//         <header className = "header">
-//             <nav className="navbar">
-//                 <img src="../../../logo192.png" alt="logo" />
-//                 <h1 className="item-nav" >Home</h1>
-//                 <h1 className="item-nav" >Profile</h1>
-//                 <h1 className="item-nav" >Sign In</h1>
-//             </nav>
-//         </header>
-//     );
-// };

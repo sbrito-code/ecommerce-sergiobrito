@@ -1,13 +1,13 @@
 import './App.css';
 import Home from './pages/Home';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
-  const styles = {};
-  
+
   return(
   <>
-    {/* Acá llamo a Home, como no recibe hijos coloco la barra */}
     <Home />
+    <ItemListContainer title='Listado de productos'/>
   </>
   );
 }

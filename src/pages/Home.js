@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import ItemListContainer from '../components/ItemListContainer';
+import Navbar from '../components/Navbar/Navbar';
 
 // import Layout from '../components/Layout';
 
@@ -10,7 +9,6 @@ const Home = () => {
         <>
             {/* Con esto llamo a Navbar. Se le coloca / xq no tiene hijos */}
             <Navbar />
-            <ItemListContainer title="Listado de productos" />
             {/* <Main />*/}
             {/* <Footer />*/}
             {/* <Layout> */}
