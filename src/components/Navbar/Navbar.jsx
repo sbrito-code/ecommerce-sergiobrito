@@ -1,28 +1,37 @@
 import React from 'react';
 import CartWidget from './CartWidget/CartWidget'
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
-    return(
+    const categories = [
+        {id: '1', address: '/categoria/bazar', text: 'BAZAR'},
+        {id: '2', address: '/categoria/deco', text: 'DECO'},
+        {id: '3', address: '/categoria/papeleriayescritorio', text: 'PAPELERIA Y ESCRITORIO'},
+        {id: '4', address: '/categoria/usopersonal', text: 'USO PERSONAL'},
+        {id: '5', address: '/categoria/muebles', text: 'MUEBLES'},
+        {id: '6', address: '/categoria/ventaspormayor', text: 'VENTAS POR MAYOR'},
+        {id: '7', address: '/categoria/kitspararegalar', text: 'KITS PARA REGALAR'},
+    ];
+
+    return (
         <header className = "header">
-            <nav className="navbar">
-                <div className="navbarTop">
-                    <div><input placeholder="Buscar"/></div>
-                    <div><CartWidget name= {''}/></div>
-                    <div><img src="../../../img/carrito.png" alt="carrito" className="logoCarrito"/></div>
-                </div>
-                <div>
-                    <ul className="navbarList">
-                        <li><a href="../pages/Home.js" className="navbarLink">BAZAR</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">DECO</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">PAPELERIA Y ESCRITORIO</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">USO PERSONAL</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">MUEBLES</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">VENTAS POR MAYOR</a></li>
-                        <li><a href="../pages/Home.js" className="navbarLink">KITS PARA REGALAR</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <nav className="navbar">
+            <div className="navbarTop">
+                <div><input placeholder="Buscar"/></div>
+                <div><CartWidget name= {''}/></div>
+                <div><img src="../../../img/carrito.png" alt="carrito" className="logoCarrito"/></div>
+            </div>
+            <div>
+                <ul className="navbarList">
+                    {categories.map((cat) => {
+                        return(
+                            <Link to={cat.address} key={cat.id} className="navbarLink" exact>{cat.text}</Link>
+                        );
+                    })}
+                </ul>
+            </div>
+        </nav>
+    </header>
     );
 };
 export default Navbar;
