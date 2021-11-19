@@ -19,10 +19,13 @@ header{
 .navbarTop{
   margin-left: 20px;
   margin-right: 20px;
+  /* display:flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  align-items:center;
 }
 
 .navbarList{
@@ -60,10 +63,8 @@ header{
   height: 6rem;
 }
 
-.logoCarrito{
-  float:right;
-  width: 1.5rem;
-  height: 1.5rem;
+.buttonCard{
+  margin:auto 0 auto auto;  
 }
 
 .product-list{
@@ -111,4 +112,8 @@ text-decoration: none;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.ButtonCountCart{
+  display:flex;
 }

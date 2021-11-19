@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Listado de productos obtenidas por la API
 const productsAPI = [
     {

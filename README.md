@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ecommerce-sergiobrito
 `mCm sublimaciones` es un ecommerce dedicado a la venta de productos sublimados.
 Contenido:
@@ -29,6 +28,3 @@ Listo! Se abrirá el navegador con la URL [http://localhost:3000] y podrás inte
 
 # Vista del proyecto
 ![mCm Sublimaciones en funcionamiento](https://github.com/sbrito-code/ecommerce-sergiobrito/tree/master/presentacion/mcmsublimaciones.gif)
-
-
->>>>>>> create app
